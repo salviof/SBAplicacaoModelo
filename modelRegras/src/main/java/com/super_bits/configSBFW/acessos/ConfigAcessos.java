@@ -52,9 +52,9 @@ public class ConfigAcessos extends ConfigPermissoesAcessoModelAbstrato {
     public MenusDaSessao definirMenu(ItfGrupoUsuario pGrupo) {
 
         if (pGrupo.equals(FabGrupoUsuario.USUARIO_ADMINISTRADOR.getRegistro())) {
-            return new MenusDaSessao(FabMenuExemplo.MENU_RESTRITO.getRegistro());
+            return new MenusDaSessao(FabMenuExemplo.MENU_RESTRITO);
         } else {
-            return new MenusDaSessao(FabMenuExemplo.MENU_INICIAL.getRegistro());
+            return new MenusDaSessao(FabMenuExemplo.MENU_INICIAL);
         }
     }
 

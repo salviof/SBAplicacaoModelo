@@ -15,7 +15,7 @@
     <modules>
         <module>modelRegras</module>
         <module>webApp</module>
-        <module>webAppRequisitos</module>
+      <!--  <module>webAppRequisitos</module>-->
         
  	
     </modules>

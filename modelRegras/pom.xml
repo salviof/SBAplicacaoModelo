@@ -21,24 +21,25 @@
 
 
         <dependency>
-            <groupId>com.super_bits</groupId>
+            <groupId>br.org.coletivoJava.fw</groupId>
             <artifactId>SBPersistencia</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>1.0.0-RC-SNAPSHOT</version>
         </dependency>
 
         <dependency>
-            <groupId>com.super_bits.modulos</groupId>
+            <groupId>br.org.coletivoJava.fw.modulos</groupId>
             <artifactId>SBAcessosModel</artifactId>
-            <version>0.9-SNAPSHOT</version>
+            <version>1.0.0-RC-SNAPSHOT</version>
         </dependency>
 
+      
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.10</version>
-
-            <type>jar</type>
+            <groupId>br.org.coletivoJava.fw</groupId>
+            <artifactId>SBTestes</artifactId>
+            <version>1.0.0-RC-SNAPSHOT</version>
+            <scope>test</scope>
         </dependency>
+
 
 
 

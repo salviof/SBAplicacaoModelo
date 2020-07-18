@@ -6,16 +6,21 @@
 package com.super_bits.config.webPaginas;
 
 import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.permissoes.ItfAcaoFormulario;
-import com.super_bits.modulosSB.webPaginas.ConfigGeral.ItfConfigWebPagina;
-import com.super_bits.modulosSB.webPaginas.JSFManagedBeans.siteMap.parametrosURL.ParametroURL;
+import com.super_bits.modulosSB.webPaginas.ConfigGeral.ConfiguradorWPPadraoArquivoConfiguracao;
+import com.super_bits.modulosSB.webPaginas.controller.servletes.urls.parametrosURL.ParametroURL;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
- * @author Salvio
+ * @author Salvio s
  */
-public class ConfigWPInomeProjetoI implements ItfConfigWebPagina {
+public class ConfigWPInomeProjetoI extends ConfiguradorWPPadraoArquivoConfiguracao {
+
+    public ConfigWPInomeProjetoI() throws IOException {
+        super();
+    }
 
     @Override
     public String SITE_HOST() {
@@ -43,11 +48,6 @@ public class ConfigWPInomeProjetoI implements ItfConfigWebPagina {
     }
 
     @Override
-    public Class mapaSite() {
-        return SiteMap.class;
-    }
-
-    @Override
     public boolean parametroDeAplicacaoEmSubDominio() {
         return false;
     }
@@ -62,4 +62,8 @@ public class ConfigWPInomeProjetoI implements ItfConfigWebPagina {
         return new ArrayList<>();
     }
 
+    @Override
+    public Class mapaSite() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

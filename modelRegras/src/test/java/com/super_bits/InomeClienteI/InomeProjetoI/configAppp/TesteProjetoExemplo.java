@@ -5,11 +5,10 @@
  */
 package com.super_bits.InomeClienteI.InomeProjetoI.configAppp;
 
-import com.super_bits.modulosSB.Persistencia.ConfigGeral.SBPersistencia;
-import com.super_bits.modulosSB.Persistencia.ERROS.TesteJunitSBPersistencia;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.SBCore;
 
 import org.junit.Test;
+import testesFW.TesteJunitSBPersistencia;
 
 /**
  *
@@ -61,7 +60,7 @@ public class TesteProjetoExemplo extends TesteJunitSBPersistencia {
 
         try {
             System.out.println("Veja um exemplo de teste, o proximo passo é adicionar abstract neta classe e excluir este método infame, para então extender cada teste unitário com ela ");
-            throw new UnsupportedOperationException("Será que um framework que não suporta uma operação não suportada pode ser bom?");
+            throw new UnsupportedOperationException("Exemplo de erro, mostrando como o coletivo java ama o desenvolvedor, e trata erros com excelencia, de acordo com cada contexto de execução, se isso não te conveceu ainda, espere para experimentar um erro de Jpa, ou jsf");
         } catch (Throwable t) {
             lancarErroJUnit(t);
         }

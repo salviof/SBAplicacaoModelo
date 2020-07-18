@@ -8,10 +8,12 @@ package com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controlle
 import com.super_bits.modulos.SBAcessosModel.fabricas.acoesDemonstracao.FabAcaoDemonstracaoSB;
 import com.super_bits.modulos.SBAcessosModel.model.acoes.AcaoDoSistema;
 import com.super_bits.modulosSB.SBCore.modulos.view.menu.ItfFabricaMenu;
-import com.super_bits.modulosSB.SBCore.modulos.view.menu.MenuSBFW;
+import com.super_bits.modulosSB.SBCore.modulos.view.menu.ItfMenuSB;
+
 import com.super_bits.modulosSB.SBCore.modulos.view.menu.SessaoMenuSB;
 import java.util.ArrayList;
 import java.util.List;
+import org.coletivojava.fw.api.objetoNativo.view.menu.MenuSBFW;
 
 /**
  *
@@ -26,17 +28,17 @@ public enum FabMenuExemplo implements ItfFabricaMenu {
     MENU_INICIAL, MENU_RESTRITO;
 
     @Override
-    public List<MenuSBFW> getTodosMenus() {
-        List<MenuSBFW> menus = new ArrayList<>();
+    public List<ItfMenuSB> getTodosMenus() {
+        List<ItfMenuSB> menus = new ArrayList<>();
         for (ItfFabricaMenu menu : this.getClass().getEnumConstants()) {
-            menus.add((MenuSBFW) menu.getRegistro());
+            menus.add((ItfMenuSB) menu.getRegistro());
         }
         return menus;
     }
 
     @Override
-    public MenuSBFW getRegistro() {
-        MenuSBFW menu = new MenuSBFW();
+    public ItfMenuSB getRegistro() {
+        ItfMenuSB menu = new MenuSBFW();
         AcaoDoSistema acao = new AcaoDoSistema();
         acao.setNomeAcao("Exemplos do Framework");
         SessaoMenuSB sessaoVisaoGeral = new SessaoMenuSB(acao);
@@ -62,12 +64,12 @@ public enum FabMenuExemplo implements ItfFabricaMenu {
     }
 
     @Override
-    public MenuSBFW getMenuPrincipal() {
+    public ItfMenuSB getMenuPrincipal() {
         return MENU_INICIAL.getRegistro();
     }
 
     @Override
-    public MenuSBFW getMenuSecundario() {
+    public ItfMenuSB getMenuSecundario() {
         return MENU_INICIAL.getRegistro();
     }
 

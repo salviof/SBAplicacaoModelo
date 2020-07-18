@@ -5,6 +5,8 @@
  */
 package com.super_bits.InomeClienteI.InomeProjetoI.model.usuariosExemplo;
 
+import com.super_bits.modulos.SBAcessosModel.fabricas.FabAcaoProjetoSB;
+import com.super_bits.modulos.SBAcessosModel.fabricas.acoesDemonstracao.FabAcaoDemonstracaoSB;
 import com.super_bits.modulos.SBAcessosModel.model.GrupoUsuarioSB;
 import com.super_bits.modulosSB.SBCore.modulos.fabrica.ItfFabrica;
 
@@ -22,12 +24,12 @@ public enum FabGrupoUsuario implements ItfFabrica {
             case USUARIO_ANONIMO:
                 novoGrupo.setNome("Grupo Anonimo");
                 novoGrupo.setAtivo(true);
-                novoGrupo.setXhtmlPaginaInicial("/site/exemplo/inicialAnonimo.xhtml");
+                novoGrupo.setPaginaInicial(FabAcaoDemonstracaoSB.DEMONSTRACAO_MB_COMPONENTE);
                 break;
             case USUARIO_ADMINISTRADOR:
                 novoGrupo.setNome("Grupo Administrador");
                 novoGrupo.setDescricao("Grupo com acesso ao menu Administrador");
-                novoGrupo.setXhtmlPaginaInicial("/site/exemplo/inicialAdministrado.xhtml");
+                novoGrupo.setPaginaInicial(FabAcaoProjetoSB.PROJETO_MB_GERENCIAR);
                 novoGrupo.setAtivo(true);
                 break;
             default:
