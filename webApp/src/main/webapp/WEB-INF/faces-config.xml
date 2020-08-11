@@ -33,6 +33,7 @@
         </view-handler>
     </application>
 
+
     <application>
         <el-resolver>
             org.primefaces.application.exceptionhandler.PrimeExceptionHandlerELResolver
@@ -40,13 +41,17 @@
     </application>
     <factory>
         <exception-handler-factory>
-            org.primefaces.application.exceptionhandler.PrimeExceptionHandlerFactory
+            com.super_bits.modulosSB.webPaginas.TratamentoDeErros.FabricaManipuladorErrosJsf
         </exception-handler-factory>
     </factory>
 
 
+
+
+
     <lifecycle>
         <phase-listener>org.primefaces.component.lifecycle.LifecyclePhaseListener</phase-listener>
+        <phase-listener>com.super_bits.modulosSB.webPaginas.cicloDeVidaJSF.CicloDeVidaPadraoJsf</phase-listener>
     </lifecycle>
 
     <name>primefaces-adamantium</name>
@@ -65,6 +70,9 @@
     </render-kit>
 
 
+    <application>
+        <resource-handler>com.super_bits.modulosSB.webPaginas.recursosJSF.RecursosJSF</resource-handler>
+    </application>
 </faces-config>
 
 

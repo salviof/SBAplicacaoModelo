@@ -23,9 +23,9 @@ import com.super_bits.modulosSB.SBCore.modulos.view.menu.ItfFabricaMenu;
  * @author Salvio Furbino
  */
 public enum FabModulosIProjetoTesteI implements ItfFabricaModulo {
-    @InfoObjetoDaFabrica(nomeObjeto = "Modulo demonstração", classeObjeto = ModuloINomeDoProjetoI.class)
+    @InfoObjetoDaFabrica(nomeObjeto = "Modulo demonstração", classeObjeto = ModuloInomeProjetoI.class)
     DEMONSTRACAO_BASICA,
-    @InfoObjetoDaFabrica(nomeObjeto = "Modulo Acesso Restrito", classeObjeto = ModuloINomeDoProjetoI.class)
+    @InfoObjetoDaFabrica(nomeObjeto = "Modulo Acesso Restrito", classeObjeto = ModuloInomeProjetoI.class)
     DEMONSTRACAO_ACESSO_RESTRITO;
 
     @Override

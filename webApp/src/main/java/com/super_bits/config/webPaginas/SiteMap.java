@@ -10,7 +10,8 @@ import com.super_bits.modulosSB.SBCore.modulos.view.menu.ItfFabricaMenu;
 import com.super_bits.modulosSB.webPaginas.JSFManagedBeans.declarados.Paginas.sistema.PgAcessoNegado;
 import com.super_bits.modulosSB.webPaginas.JSFManagedBeans.formularios.interfaces.ItfSiteMapa;
 import com.super_bits.modulosSB.webPaginas.JSFManagedBeans.siteMap.MB_SiteMapa;
-import javax.faces.bean.ApplicationScoped;
+import javax.enterprise.context.ApplicationScoped;
+
 import javax.inject.Inject;
 
 /**

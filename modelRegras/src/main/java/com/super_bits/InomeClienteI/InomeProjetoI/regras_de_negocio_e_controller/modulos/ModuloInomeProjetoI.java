@@ -18,8 +18,8 @@ import javax.persistence.Entity;
  * @author desenvolvedor
  */
 @Entity
-@InfoObjetoSB(tags = "Modulo do Projeto INomeDoProjetoI", plural = "modulos")
-public class ModuloINomeDoProjetoI extends ModuloAcaoSistema {
+@InfoObjetoSB(tags = "Modulo do Projeto InomeProjetoI", plural = "modulos")
+public class ModuloInomeProjetoI extends ModuloAcaoSistema {
 
     @InfoCampo(tipo = FabTipoAtributoObjeto.ENUM_FABRICA)
     private FabModulosIProjetoTesteI fabModulo;
