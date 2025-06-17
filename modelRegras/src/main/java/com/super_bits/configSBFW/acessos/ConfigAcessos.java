@@ -10,7 +10,7 @@ import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller
 import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller.modulos.demonstracao_acesso_restrito.ModuloAcessoRestritoExemplo;
 import com.super_bits.modulos.SBAcessosModel.ConfigPermissoesAcessoModelAbstrato;
 import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfGrupoUsuario;
-import com.super_bits.modulosSB.SBCore.modulos.view.menu.MenusDaSessao;
+import org.coletivojava.fw.api.objetoNativo.view.menu.MenusDaSessao;
 
 /**
  *
