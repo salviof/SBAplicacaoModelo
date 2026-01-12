@@ -9,7 +9,7 @@ import com.super_bits.InomeClienteI.InomeProjetoI.model.usuariosExemplo.FabGrupo
 import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller.FabMenuExemplo;
 import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller.modulos.demonstracao_acesso_restrito.ModuloAcessoRestritoExemplo;
 import com.super_bits.modulos.SBAcessosModel.ConfigPermissoesAcessoModelAbstrato;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfGrupoUsuario;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.ItfGrupoUsuario;
 import org.coletivojava.fw.api.objetoNativo.view.menu.MenusDaSessao;
 
 /**

@@ -2,7 +2,7 @@ package com.super_bits.InomeProjetoI.paginas;
 
 import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller.modulos.demonstracao_acesso_restrito.FabAcaoAcessoRestritoExemplo;
 import com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controller.modulos.demonstracao_acesso_restrito.InfoAcaoAcessoRestritoExemplo;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfBeanSimples;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.ItfBeanSimples;
 import com.super_bits.modulosSB.webPaginas.JSFManagedBeans.formularios.MB_PaginaConversation;
 import javax.faces.view.ViewScoped;
 import javax.inject.Named;

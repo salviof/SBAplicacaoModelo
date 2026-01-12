@@ -7,7 +7,7 @@ package com.super_bits.InomeClienteI.InomeProjetoI.regras_de_negocio_e_controlle
 
 import com.super_bits.modulosSB.SBCore.modulos.Controller.Interfaces.ItfResposta;
 import com.super_bits.modulosSB.Persistencia.dao.ControllerAbstratoSBPersistencia;
-import com.super_bits.modulosSB.SBCore.modulos.objetos.registro.Interfaces.basico.ItfBeanSimples;
+import com.super_bits.modulosSB.SBCore.modulos.objetos.entidade.basico.ItfBeanSimples;
 
 /**
  *
