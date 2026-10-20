@@ -8,7 +8,7 @@ package com.super_bits.InomeClienteI.InomeProjetoI.configAppp;
 import com.super_bits.configSBFW.acessos.ConfigAcessos;
 import com.super_bits.configSBFW.acessos.UtilInomeProjetoIGlobalVar;
 import com.super_bits.modulosSB.SBCore.ConfigGeral.ConfiguradorCoreDeProjetoJarAbstrato;
-import com.super_bits.modulosSB.SBCore.ConfigGeral.ItfConfiguracaoCoreCustomizavel;
+import com.super_bits.modulosSB.SBCore.ConfigGeral.ComoContextoExecCustomizavel;
 
 /**
  *
@@ -45,7 +45,7 @@ public class ConfiguradorCoreInomeProjetoI extends ConfiguradorCoreDeProjetoJarA
      * @param pConfig Objeto Com informações de configuração do sistema
      */
     @Override
-    public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+    public void defineFabricasDeACao(ComoContextoExecCustomizavel pConfig) {
         pConfig.setClasseConfigPermissao(ConfigAcessos.class);
         pConfig.setFabricaDeAcoes(UtilInomeProjetoIGlobalVar.pAcoesDoSistema());
     }

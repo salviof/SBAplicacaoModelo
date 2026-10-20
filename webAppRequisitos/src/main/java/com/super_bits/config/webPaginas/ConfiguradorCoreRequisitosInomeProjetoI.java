@@ -5,7 +5,7 @@
  */
 package com.super_bits.config.webPaginas;
 
-import com.super_bits.modulosSB.SBCore.ConfigGeral.ItfConfiguracaoCoreCustomizavel;
+import com.super_bits.modulosSB.SBCore.ConfigGeral.ComoContextoExecCustomizavel;
 import com.super_bits.modulosSB.webPaginas.ConfigGeral.ConfiguradorCoreDeProjetoWebWarAbstrato;
 import javax.servlet.ServletContext;
 
@@ -24,7 +24,7 @@ public class ConfiguradorCoreRequisitosInomeProjetoI extends ConfiguradorCoreDeP
     }
 
     @Override
-    public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+    public void defineFabricasDeACao(ComoContextoExecCustomizavel pConfig) {
 
     }
 

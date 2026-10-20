@@ -7,7 +7,7 @@ package com.super_bits.config.webPaginas;
 
 import com.super_bits.configSBFW.acessos.ConfigAcessos;
 import com.super_bits.configSBFW.acessos.UtilInomeProjetoIGlobalVar;
-import com.super_bits.modulosSB.SBCore.ConfigGeral.ItfConfiguracaoCoreCustomizavel;
+import com.super_bits.modulosSB.SBCore.ConfigGeral.ComoContextoExecCustomizavel;
 import com.super_bits.modulosSB.webPaginas.ConfigGeral.ConfiguradorCoreDeProjetoWebWarAbstrato;
 import javax.servlet.ServletContext;
 
@@ -26,7 +26,7 @@ public class ConfiguradorCoreWebAppInomeProjetoI extends ConfiguradorCoreDeProje
     }
 
     @Override
-    public void defineFabricasDeACao(ItfConfiguracaoCoreCustomizavel pConfig) {
+    public void defineFabricasDeACao(ComoContextoExecCustomizavel pConfig) {
         pConfig.setClasseConfigPermissao(ConfigAcessos.class);
         pConfig.setFabricaDeAcoes(UtilInomeProjetoIGlobalVar.pAcoesDoSistema());
     }
